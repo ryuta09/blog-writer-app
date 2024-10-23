@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import MainNav from "@/components/main-nav";
 import { buttonVariants } from "@/components/ui/button";
 import { marketingConfig } from "@/config/marketing";
@@ -16,6 +17,7 @@ export default function MarketingLayout({children}: {children: React.ReactNode})
         </div>
       </header>
       <main>{children}</main>
+      <Footer />
     </div>
   )
 }
