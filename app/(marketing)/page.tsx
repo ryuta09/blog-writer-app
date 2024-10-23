@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function IndexPage() {
   return (
     <>
-      <section className="py-5 md:py-12 md:pt-10  pb-8 md:pb-12">
+      <section className="py-8 md:py-12 md:pt-10 pb-8 md:pb-12">
         <div className="container text-center flex flex-col items-center gap-4 max-w-[64rem] mx-auto">
           <Link
             href={siteConfig.links.x}
@@ -44,7 +44,7 @@ export default function IndexPage() {
       </section>
 
       <section
-        className="container mx-auto py-5 md:py-12 space-y-6 bg-slate-50 p-4 rounded-md"
+        className="container mx-auto py-8 md:py-12 space-y-6 bg-slate-50 p-4 rounded-md"
         id="feature"
       >
         <div className="flex flex-col items-center gap-6 max-w-[58rem] mx-auto text-center">
@@ -118,6 +118,15 @@ export default function IndexPage() {
         </div>
         
       </section>
+
+      <section id="contact" className="container py-8 md:py-12">
+        <div className="max-w-[58rem] mx-auto text-center flex flex-col gap-4">
+          <h2 className="font-extrabold text-3xl md:text-6xl">Contact Me</h2>
+          <p className="text-muted-foreground sm:text-lg sm:leading-7">もしもWebサービスを気に入ってくれた場合は下記XからDMでご連絡ください。<br />お仕事のご連絡お待ちしております。</p>
+          <Link href={siteConfig.links.x} className="underline underline-offset-2" target="_blank" rel="noreferrer">お仕事はXまで</Link>
+        </div>
+      </section>
+
     </>
   );
 }
